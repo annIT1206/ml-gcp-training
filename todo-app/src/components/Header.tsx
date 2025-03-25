@@ -24,7 +24,7 @@ const Header: React.FC = () => {
             </svg>
           </div>
           <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Todo App
+            Todo App-MaryAnn
           </h1>
         </div>
         <div className="mt-2 text-xs flex items-center text-gray-500 dark:text-gray-400">
