@@ -1,13 +1,13 @@
 steps:
   # Install dependencies
   - name: 'node:22'
-    dir: 'todo-app'
+    dir: 'final-todo-app-api'
     entrypoint: npm
     args: ['ci']
 
   # Create .env file
   - name: 'node:22'
-    dir: 'todo-app'
+    dir: 'final-todo-app-api'
     entrypoint: 'npm'
     args: ['run', 'create-env', '.env']
     secretEnv: ['API_KEY']
@@ -22,7 +22,7 @@ steps:
 # Access secrets from Secret Manager
 availableSecrets:
   secretManager:
-    - versionName: projects/${PROJECT_ID}/secrets/API_KEY/versions/1
+    - versionName: projects/${PROJECT_ID}/secrets/API_KEY/versions/latest
       env: 'API_KEY'
 
 timeout: '1600s' 
