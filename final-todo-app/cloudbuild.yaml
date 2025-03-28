@@ -15,7 +15,8 @@ steps:
       - 'NEXT_PUBLIC_API_BASE_URL="https://ml-gcp-training-370880871422.asia-southeast1.run.app"'
 
   # Deploy to App Engine 
-    args: ['app', 'deploy', '--no-promote']
+  #  args: ['app', 'deploy', '--no-promote']
+    args: ['app', 'deploy']
     dir: 'final-todo-app'
 
 timeout: '1600s' 
