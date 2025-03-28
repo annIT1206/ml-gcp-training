@@ -12,7 +12,7 @@ steps:
     args: ['run', 'create-env', '.env']
     env:
       - 'NEXT_PUBLIC_APP_TITLE="Todo App"'
-      - 'NEXT_PUBLIC_API_BASE_URL=$$API_KEY'
+      - 'NEXT_PUBLIC_API_BASE_URL="https://ml-gcp-training-370880871422.asia-southeast1.run.app"'
 
   # Deploy to App Engine 
     args: ['app', 'deploy', '--no-promote']
