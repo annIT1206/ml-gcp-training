@@ -16,6 +16,7 @@ steps:
 
   # Deploy to App Engine 
   #  args: ['app', 'deploy', '--no-promote']
+  - name: 'gcr.io/cloud-builders/gcloud'
     args: ['app', 'deploy']
     dir: 'final-todo-app'
 
